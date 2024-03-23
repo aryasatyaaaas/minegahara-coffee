@@ -1,0 +1,1224 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Splash */
+
+.splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: -300px;
+  z-index: 200;
+  padding: 0;
+  top: 0;
+}
+
+.splash2 {
+  display: flex;
+  /* position: fixed; */
+  margin-top: 200px;
+  width: 200px;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  padding: 0;
+  top: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  border: none;
+  top: 0;
+  z-index: 2;
+  position: fixed;
+}
+
+.logo {
+  color: #eac696;
+  margin: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.logo h1 {
+  margin-left: 10px;
+  font-size: 30px;
+  color: #006041;
+  margin-top: 20px;
+  font-family: "Plus Jakarta Sans";
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 3px;
+}
+.navbar li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #006041;
+  text-decoration: underline;
+}
+/* Hero */
+.hero {
+  /* width: 100%; */
+  margin-top: 100px;
+  height: 600px;
+  display: flex;
+  /* border: 1px solid red; */
+  background-image: url(images/coffee-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info {
+  /* width: 600px; */
+  height: 200px;
+  margin-top: 200px;
+  margin-left: 100px;
+  color: #006041;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+
+.order {
+  margin-top: 20px;
+  font-size: 20px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #006041;
+}
+
+.order:hover {
+  background-color: white;
+  color: #006041;
+  border: 3px solid #006041;
+  transition: 0.3s;
+}
+/* About US */
+.about {
+  height: 500px;
+  /* border: 1px solid red; */
+  background-color: #f7f7f7;
+  display: flex;
+}
+
+.cerita-logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.desc {
+  width: 800px;
+  /* border: 1px solid red; */
+  /* position: absolute; */
+  margin-left: 70px;
+  margin-top: 100px;
+}
+
+.desc h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #a7a7a7;
+  margin-bottom: 10px;
+}
+.desc p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* Menu */
+.menu {
+  margin: auto;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
+/* card section */
+.cards {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+  border: 3px solid #006041;
+  background-color: #f7f7f7;
+  margin: 20px;
+  border-radius: 15px;
+  font-family: "Monserrat", sans-serif;
+  /* border: 1px solid red; */
+}
+
+.img-card {
+  width: 380px;
+  height: 290px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  /* background-image: url(images/coffee-image1.jpg); */
+  background-size: cover;
+}
+
+.card1 {
+  background-image: url(images/robusta.png);
+  background-position: center;
+}
+.card2 {
+  background-image: url(images/frappe-blend.png);
+  background-size: cover;
+  background-position: center -43px;
+}
+
+.card3 {
+  background-image: url(images/americano.png);
+  background-size: cover;
+  background-position: center -140px;
+}
+.card h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.harga {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.card button {
+  margin: auto;
+  display: block;
+  margin-top: -30px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.desc-kopi {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.view-all {
+  margin: auto;
+  display: block;
+  margin-top: 0px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 150px;
+  font-family: "Plus Sans", sans-serif;
+  background-color: #006041;
+  font-size: 18px;
+  padding: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+}
+.view-all {
+  color: white;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  background-color: white;
+  color: #006041;
+  border: 3px solid #006041;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.cs-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #006041;
+}
+
+.ratings h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* customer reviws section */
+.customer {
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.c1 {
+  margin-left: 200px;
+}
+.c2 {
+  margin-right: 200px;
+}
+.customer-image {
+  width: 200px;
+  height: 3500px;
+  /* background: url(images/milet.png); */
+  background-size: cover;
+  margin: 20px auto;
+  border-radius: 70%;
+}
+
+.cust1 {
+  background-image: url(images/milet.png);
+}
+.cust2 {
+  background-image: url(images/lilas.png);
+}
+
+.customer-name {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.ratings {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.ratings h3 {
+  text-align: center;
+}
+
+.ratings p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  margin: 10px;
+}
+
+svg {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+.kontainer {
+  margin-top: 100px;
+  width: 100%;
+  height: 800px;
+  /* border: 1px solid red; */
+  background-color: #f7f7f7;
+}
+.kontainer h1 {
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #006041;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+}
+
+.kontainer p {
+  text-align: center;
+  font-size: 27px;
+  font-family: "Plus Jakarta Sans";
+  color: #97a259;
+}
+.promo-banner {
+  width: 80%;
+  height: 600px;
+  /* border: 1px solid red; */
+  background-image: url(images/promo-banner.png);
+  background-size: cover;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.promo {
+  margin-top: 150px;
+  width: 140vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 20px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  85% {
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.wrapper img {
+  width: 100%;
+}
+
+/* Menu Section */
+
+.section-title {
+  width: 80%;
+  color: #a7a7a7;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  /* border: 1px solid red; */
+}
+.menu-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  /* height: 600px; */
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.menu-books h1 {
+  font-family: "Monserrat", sans-serif;
+  color: #a7a7a7;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card-coffee {
+  display: flex;
+  width: 500px;
+  height: 220px;
+  background-color: #f7f7f7;
+  margin: 10px;
+  /* border: 1px solid red; */
+}
+
+.img-coffee-card {
+  /* background-image: url(images/frappe-blend.png); */
+  background-size: cover;
+  width: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* card image */
+.coffee1 {
+  background-image: url(images/frappe-blend.png);
+}
+
+.coffee2 {
+  background-image: url(images/americano.png);
+  background-position: center;
+}
+
+.coffee3 {
+  background-image: url(images/expresso.jpg);
+}
+
+.coffee4 {
+  background-image: url(images/robusta.png);
+  background-position: center;
+}
+.non1 {
+  background-image: url(images/hot-chocolate.jpg);
+  background-position: center;
+}
+
+.non2 {
+  background-image: url(images/smoothies.jpg);
+}
+.non3 {
+  background-image: url(images/tea.jpg);
+  background-position: center -90px;
+}
+
+.non4 {
+  background-image: url(images/milk-tea.jpg);
+  background-position: center -50px;
+}
+.fs1 {
+  background-image: url(images/Tuna\ Mayo.jpg);
+}
+.fs2 {
+  background-image: url(images/beef-s.jpg);
+}
+.fs3 {
+  background-image: url(images/almond-c.jpg);
+}
+.fs4 {
+  background-image: url(images/Triple\ Cheese\ Danish.jpg);
+  background-size: cover;
+}
+.card-coffee-desc {
+  width: 240px;
+  margin-top: 30px;
+  height: 100px;
+  /* border: 1px solid red; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.card-coffee-desc h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.card-coffee-desc p {
+  text-align: justify;
+}
+
+.order-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 90px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #006041;
+}
+
+.order-btn:hover {
+  background-color: white;
+  color: #006041;
+  border: 3px solid #006041;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+/* Footer */
+.footer {
+  margin-top: 50px;
+  background-color: #f8fafa;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  text-align: center;
+  /* padding-top: 30px; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Contact Section */
+
+.contact {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-bottom: 100px;
+}
+.contact-title {
+  /* border: 1px solid red */
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+
+.contact-title h1 {
+  color: #006041;
+  font-size: 50px;
+}
+
+.contact-title p {
+  color: rgb(130, 130, 142);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  width: 500px;
+  height: 550px;
+  /* border: 1px solid red; */
+  margin-top: 90px;
+  margin-left: 30px;
+  margin-right: 20px;
+  padding: 30px;
+  background-color: #006041;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border-radius: 20px;
+}
+
+.contact-card p {
+  margin-top: 15px;
+}
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+}
+.submit {
+  margin-top: 10px;
+  background-color: #006041;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+label {
+  color: #837774;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+textarea {
+  border-radius: 15px;
+}
+/* Modal Container  */
+.modal-container {
+  position: fixed;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.411);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 1s;
+}
+
+.modal-container2 {
+  position: fixed;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.411);
+  visibility: hidden;
+  transition: visibility 1s, opacity 1s;
+}
+
+.modal-container3 {
+  position: fixed;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.411);
+  visibility: hidden;
+  /* transition: visibility 1s, opacity 1s; */
+}
+/* Modal Container End */
+
+.modal span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+}
+
+.modal-img {
+  width: 120px;
+  height: 200px;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  background-color: white;
+  padding: 36px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+}
+
+.modal h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+
+.modal p {
+  margin: 20px 20;
+  padding: 0;
+  font-family: "Plus Jakarta Sans";
+  font-size: 25px;
+}
+
+.modal img {
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.modal label {
+  margin-top: 20px;
+}
+/* Order button and add to cart button */
+.order-now {
+  width: 360px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #006041;
+  color: white;
+  border: none;
+}
+
+.order-now:hover {
+  background-color: white;
+  color: #006041;
+  border: 2px solid #006041;
+  transition: 0.3s;
+}
+
+.second-btn {
+  width: 360px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: white;
+  color: #006041;
+  border: 1px solid #006041;
+  cursor: pointer;
+}
+
+/* modal cart */
+.modal-3 {
+  width: 600px;
+  height: auto;
+  max-height: 75%;
+  position: relative;
+  background-color: white;
+  padding: 36px;
+  border-radius: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.cart-title {
+  text-align: center;
+  color: #006041;
+  font-family: "Plus Jakarta Sans";
+}
+.all-project {
+  margin-top: 50%;
+}
+.project-detail {
+  /* margin: 50px 30px 100px; */
+  width: 500px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #006041;
+  background-image: url(images/ocean.png);
+  box-shadow: 2px 2px 5px grey;
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px auto;
+  position: relative;
+}
+
+.project-img {
+  margin: 5px;
+  /* border: 5px solid rgb(243, 199, 117); */
+}
+
+.project-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.project-description {
+  margin: 5px;
+}
+
+.project-description h3 {
+  margin: 0 5px 5px;
+  padding: 0;
+  font-size: 23px;
+  color: white;
+  font-family: "Plus Jakarta Sans";
+}
+
+.project-description p {
+  margin: 20px 5px;
+  padding: 0;
+  line-height: 1.8;
+  color: azure;
+  font-family: "Plus Jakarta Sans";
+}
+
+.delete {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* footer (order.html) */
+.footer-order {
+  margin-top: 50px;
+  background-color: #f8fafa;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.footer-order p {
+  text-align: center;
+  /* padding-top: 30px; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+/* increment and decrement */
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3), 4px 7px 15px rgba(0, 0, 0, 0.2),
+    9px 15px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  max-width: 360px;
+  margin-top: 20px;
+}
+
+.tombol,
+.input {
+  outline: none;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+}
+
+.input {
+  width: 100%;
+  text-align: center;
+}
+
+.tombol {
+  cursor: pointer;
+}
+.tombol:nth-last-child(1) {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.tombol:nth-child(1) {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.tombol:hover {
+  background-color: #e6e6e6;
+}
+.tombol:nth-last-child(1):active {
+  box-shadow: inset -4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.tombol:nth-child(1):active {
+  box-shadow: inset 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.order-msg {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 30px;
+  color: #006041;
+  font-family: "Plus Jakarta Sans";
+  display: none;
+  margin-bottom: 200px;
+}
+
+.cart {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  /* All Products  */
+  .promo {
+    margin-top: 180px;
+  }
+  .kontainer {
+    height: 600px;
+  }
+  /* Main Page */
+  .desc {
+    width: 700px;
+  }
+  .cerita-logo {
+    display: none;
+  }
+  .info {
+    width: 500px;
+  }
+}
+
+@media (max-width: 390px) {
+  /* All Products */
+  .kontainer {
+    height: 450px;
+  }
+  .kontainer h1 {
+    font-size: 30px;
+  }
+
+  .promo {
+    margin-top: 50px;
+    width: 360px;
+  }
+
+  .card-coffee {
+    width: 360px;
+  }
+  /* Main Page */
+  .info {
+    margin-left: 18px;
+  }
+
+  .hero {
+    background-image: none;
+  }
+  .desc {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 350px;
+  }
+  .about {
+    height: 550px;
+  }
+  .card {
+    width: 300px;
+    height: 590px;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .img-card {
+    width: 290px;
+  }
+
+  .customer {
+    margin: 20px auto;
+    width: 300px;
+    height: 500px;
+  }
+  /* Contact Form */
+
+  .contact-title p {
+    margin: 10px;
+  }
+  .contact {
+    display: inline;
+    width: 100%;
+  }
+  .contact-card {
+    margin: auto;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    width: 350px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  /* All Products */
+  .kontainer {
+    height: 450px;
+  }
+  .kontainer h1 {
+    font-size: 30px;
+  }
+
+  .promo {
+    margin-top: 50px;
+    width: 360px;
+  }
+
+  .card-coffee {
+    width: 360px;
+  }
+  /* Main Page */
+  .info {
+    margin-left: 18px;
+  }
+
+  .hero {
+    background-image: none;
+  }
+  .desc {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 350px;
+  }
+  .about {
+    height: 550px;
+  }
+  .card {
+    width: 300px;
+    height: 590px;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .img-card {
+    width: 290px;
+  }
+
+  .customer {
+    margin: 20px auto;
+    width: 300px;
+    height: 500px;
+  }
+  /* Contact Form */
+
+  .contact-title p {
+    margin: 10px;
+  }
+  .contact {
+    display: inline;
+    width: 100%;
+  }
+  .contact-card {
+    margin: auto;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    width: 350px;
+    margin: 30px auto;
+  }
+
+  /* Modal Section */
+}
+
+@media (max-width: 1440px) {
+  /* Promo Section */
+  .kontainer {
+    height: 600px;
+  }
+  .promo {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info {
+    margin-left: 20px;
+  }
+  .hero {
+    background-position: -290px center;
+  }
+
+  .desc {
+    width: 600px;
+  }
+  .cerita-logo {
+    display: flex;
+    width: 600px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* menu */
+  .menu-title {
+    font-size: 45px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .img-card {
+    background-position: center;
+    width: 280px;
+  }
+
+  /* ratings */
+
+  .ratings {
+    display: flex;
+  }
+  .customer {
+    flex-direction: column;
+    margin: 10px auto;
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-position: -20px center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-size: cover;
+    background-position: -300px center;
+  }
+}

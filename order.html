@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="images/coffee-cup.png" type="image/x-icon" />
+    <title>Minegahara Coffee</title>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/coffee-cup.png" alt="" /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="all-products.html">Menu</a></li>
+          <li><a href="index.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="splash2">
+        <img src="images/rolling.gif" alt="" />
+      </div>
+
+      <div class="order-msg">
+        <h1 class="order-title">Thank you for your order</h1>
+        <p>
+          Your order has been placed and is being processed. You will receive an
+          email with an order details
+        </p>
+        <a href="index.html"><button class="order">Back to Homepage</button></a>
+      </div>
+      <div class="footer-order">
+        <p>&copy; 2024. Minegahara Coffee <br />All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var splash = document.querySelector(".splash2");
+    if (splash) {
+      document.addEventListener("DOMContentLoaded", function (event) {
+        setTimeout(function () {
+          splash.style.display = "none";
+        }, 1000);
+      });
+    }
+    var order = document.querySelector(".order-msg");
+    var loading = document.querySelector(".splash2");
+    var footer = document.querySelector(".footer-order");
+    if (order && loading && footer) {
+      document.addEventListener("DOMContentLoaded", function (event) {
+        setTimeout(function () {
+          order.style.display = "block";
+          footer.style.display = "block";
+          //   order.dataset.aos = "fade-down";
+          loading.style.display = "none";
+        }, 1800);
+      });
+    }
+
+    AOS.init();
+  </script>
+</html>

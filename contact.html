@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/coffee-cup.png"
+      type="image/x-icon"
+    />
+    <title>Minegahara Coffee</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <header>
+      <div class="navbar">
+        <div class="logo" id="logo">
+          <a href="index.html"><img src="images/coffee-cup.png" alt="" /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="all-products.html">Menu</a></li>
+          <li><a href="index.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="contact-title">
+        <h1 data-aos="fade-down">Hubungi Kami</h1>
+        <p data-aos="fade-down">
+          Ada pertanyaan atau komentar? Cukup tulis pesan kepada kami!
+        </p>
+      </div>
+      <div class="contact">
+        <div class="contact-card" data-aos="fade-right">
+          <h1>Informasi Kontak</h1>
+          <p>
+            Jika Anda mempunyai pertanyaan atau kekhawatiran, Anda dapat
+            menghubungi kami dengan mengisi formulir kontak, menelepon kami,
+            datang ke kantor kami, menemukan kami di jejaring sosial lain, atau
+            Anda dapat mengirim email pribadi kepada kami di:
+          </p>
+          <p>hello@minegahara.coffee</p>
+          <p>080-1234-5678</p>
+          <p>Minegahara Coffee , Japan</p>
+        </div>
+        <form
+          action="https://formsubmit.co/aryasatya2510@gmail.com"
+          autocomplete="off"
+          method="POST"
+        >
+          <div class="contact-form" data-aos="fade-left">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="" />
+            <label for="mail">Email</label>
+            <input type="text" name="email" id="" />
+            <label for="number">Phone Number</label>
+            <input type="number" name="number" id="" />
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="10"></textarea>
+            <input type="submit" class="submit" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" class="next" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-container">
+        <div class="modal">
+          <img src="images/coffee-cup.png" alt="" />
+          <h3>Message Sent!</h3>
+          <p>Thank you for contacting us!</p>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <p>&copy; 2024. Minegahara Coffee <br />All rights reserved.</p> 
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/39b10a68c6.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var btnSubmit = document.querySelector(".submit");
+    var modal = document.querySelector(".modal-container");
+
+    if (btnSubmit) {
+      btnSubmit.addEventListener("click", () => {
+        modal.classList.add("show");
+
+        const next = documenr.querySelector(".next");
+        next.setAttribute("value", "https://aryasatya-blog.netlify.app/");
+      });
+    }
+    AOS.init();
+  </script>
+</html>

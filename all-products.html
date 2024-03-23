@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/coffee-cup.png" type="image/x-icon" />
+    <title>Minegahara Coffee</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/coffee-cup.png" alt="" /></a>
+          <!-- <h1>Minegahara Coffee</h1> -->
+        </div>
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="all-products.html">Menu</a></li>
+          <li><a href="index.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <i
+              class="fa-solid fa-cart-shopping"
+              id="cart"
+              style="cursor: pointer"
+            ></i>
+          </li>
+        </ul>
+      </div>
+      <!-- Section Promo -->
+      <div class="kontainer">
+        <h1>Promo Untuk Kamu</h1>
+        <p>Temukan berbagai promo menarik di sini!</p>
+        <div class="promo">
+          <div class="wrapper">
+            <img src="images/promo-banner.png" alt="" />
+            <img src="images/promo-banner-2.png" alt="" />
+            <img src="images/promo-banner-3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Coffee Based Drinks -->
+      <h1 class="section-title" data-aos="fade-right" data-aos-duration="900">
+        COFFEE-BASED DRINKS
+      </h1>
+      <div class="menu-books">
+        <div class="card-coffee" data-aos="fade-right" data-aos-duration="1000">
+          <div class="img-coffee-card coffee1"></div>
+          <div class="card-coffee-desc">
+            <h3>FRAPPE BLEND</h3>
+            <p>
+              Frappe blend adalah minuman dingin berbasis kopi atau es krim,
+              sering dicampur dengan sirup atau susu.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/frappe-blend.png','FRAPPE BLEND')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-left" data-aos-duration="1100">
+          <div class="img-coffee-card coffee2"></div>
+          <div class="card-coffee-desc">
+            <h3>AMERICANO</h3>
+            <p>
+              Americano: Espresso dicampur dengan air panas, menciptakan minuman
+              kopi ringan dengan rasa klasik yang kuat.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/americano.png','AMERICANO')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-right" data-aos-duration="1200">
+          <div class="img-coffee-card coffee3"></div>
+          <div class="card-coffee-desc">
+            <h3>HOT ESPRESSO</h3>
+            <p>
+              Minuman kopi pekat dengan rasa intens dan aroma khas, disajikan
+              dalam sajian kecil tanpa tambahan air.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/expresso.jpg','HOT ESPRESSO')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-left" data-aos-duration="1300">
+          <div class="img-coffee-card coffee4"></div>
+          <div class="card-coffee-desc">
+            <h3>ROBUSTA</h3>
+            <p>
+              Robusta: Kopi kuat, beraroma, dengan rasa pahit yang khas, cocok
+              untuk penggemar kopi berkekuatan tinggi.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/robusta.png','ROBUSTA')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Non Coffee Drinks -->
+      <h1 class="section-title" data-aos="fade-right" data-aos-duration="900">
+        NON-COFFEE DRINKS
+      </h1>
+      <div class="menu-books">
+        <div class="card-coffee" data-aos="fade-right" data-aos-duration="1000">
+          <div class="img-coffee-card non1"></div>
+          <div class="card-coffee-desc">
+            <h3>HOT CHOCOLATE</h3>
+            <p>
+              Hot chocolate adalah minuman cokelat panas yang terbuat dari susu
+              atau air dan bubuk cokelat.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/hot-chocolate.jpg','HOT CHOCOLATE')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-left" data-aos-duration="1100">
+          <div class="img-coffee-card non2"></div>
+          <div class="card-coffee-desc">
+            <h3>SMOOTHIES</h3>
+            <p>
+              Smoothies adalah minuman dingin berbasis buah-buahan yang dicampur
+              dengan yogurt, jus, atau susu.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/smoothies.jpg','SMOOTHIES')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-right" data-aos-duration="1200">
+          <div class="img-coffee-card non3"></div>
+          <div class="card-coffee-desc">
+            <h3>TEA</h3>
+            <p>
+              Minuman teh adalah minuman panas atau dingin yang diseduh dari
+              daun teh dengan air panas.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/tea.jpg','TEA')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-left" data-aos-duration="1300">
+          <div class="img-coffee-card non4"></div>
+          <div class="card-coffee-desc">
+            <h3>MILK TEA</h3>
+            <p>
+              Minuman teh yang dicampur susu, biasanya disajikan dingin atau
+              panas, memiliki rasa yang manis dan aroma teh yang khas.
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/milk-tea.jpg','MILK TEA')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Food and Snacjs -->
+      <h1 class="section-title" data-aos="fade-right" data-aos-duration="900">
+        FOOD AND SNACKS
+      </h1>
+      <div class="menu-books">
+        <div class="card-coffee" data-aos="fade-right" data-aos-duration="1000">
+          <div class="img-coffee-card fs1"></div>
+          <div class="card-coffee-desc">
+            <h3>Tuna Mayo Sandwich.</h3>
+            <p>
+              Sandwich dengan mayonaise, butiran blackpepper, cheddar cheese,
+              dan tuna fillet
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/Tuna Mayo.jpg','Tuna Mayo Sandwich.')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-left" data-aos-duration="1100">
+          <div class="img-coffee-card fs2"></div>
+          <div class="card-coffee-desc">
+            <h3>Asian Beef Black Pepper Sandwich</h3>
+            <p>
+              Sandwich dengan potongan daging, saus black pepper, cheddar, dan
+              sauteed onio
+            </p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/beef-s.jpg','Asian Beef Black Pepper Sandwich')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-right" data-aos-duration="1200">
+          <div class="img-coffee-card fs3"></div>
+          <div class="card-coffee-desc">
+            <h3>Almond Croissant</h3>
+            <p>Croissant dengan taburan gula halus dan potongan almond</p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/almond-c.jpg','Almond Croissant')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <div class="card-coffee" data-aos="fade-left" data-aos-duration="1300">
+          <div class="img-coffee-card fs4"></div>
+          <div class="card-coffee-desc">
+            <h3 class="modal-item-name">Triple Cheese Danish</h3>
+            <p>Danish dengan isian krim keju</p>
+            <button
+              class="order-btn"
+              onclick="openModal('images/Triple Cheese Danish.jpg', 'Triple Cheese Danish')"
+            >
+              Order
+            </button>
+          </div>
+        </div>
+        <!-- Order Modal -->
+        <div class="modal-container2">
+          <div class="modal">
+            <h1>Order</h1>
+            <img alt="" class="modal-img" />
+            <h3></h3>
+            <label for="coffee">Enter Amount of Items</label>
+            <div class="input-group">
+              <button id="decrement" class="tombol">-</button>
+              <input
+                type="number"
+                id="input"
+                value="0"
+                class="input"
+                readonly
+              />
+              <button id="increment" class="tombol">+</button>
+            </div>
+            <a href="order.html"><button class="order-now">Order</button></a>
+            <button class="second-btn">Add to cart</button>
+
+            <span>x</span>
+          </div>
+        </div>
+        <!-- Cart Modal -->
+        <div class="modal-container3">
+          <div class="modal-3">
+            <h1 class="cart-title">Cart</h1>
+            <!-- <article>
+              <div class="project-detail">
+                <div class="project-img">
+                  <img src="images/coffee cup gif.gif" alt="SpaceWar" />
+                </div>
+
+                <div class="project-description">
+                  <h3>Americano</h3>
+                  <p>Quantity : <span class="order-qty">1</span></p>
+                </div>
+                <div class="rocket-container">
+                  <img src="images/rocket.png" alt="" />
+                </div>
+                <div class="delete">
+                  <i class="fa-solid fa-trash fa-lg" style="color: #ed0c0c"></i>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="project-detail">
+                <div class="project-img">
+                  <img src="images/coffee cup gif.gif" alt="SpaceWar" />
+                </div>
+
+                <div class="project-description">
+                  <h3>Smoothies</h3>
+                  <p>Quantity : <span class="order-qty">1</span></p>
+                </div>
+                <div class="delete">
+                  <i class="fa-solid fa-trash fa-lg" style="color: #ed0c0c"></i>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="project-detail">
+                <div class="project-img">
+                  <img src="images/coffee cup gif.gif" alt="SpaceWar" />
+                </div>
+
+                <div class="project-description">
+                  <h3>Smoothies</h3>
+                  <p>Quantity : <span class="order-qty">1</span></p>
+                </div>
+                <div class="delete">
+                  <i class="fa-solid fa-trash fa-lg" style="color: #ed0c0c"></i>
+                </div>
+              </div>
+            </article> -->
+            <span class="modal-span">x</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy; 2024. Minegahara Coffee <br />All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/39b10a68c6.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    var modal = document.querySelector(".modal-container2");
+    var button = document.querySelectorAll(".order-btn");
+    var btnClose = document.querySelector("span");
+    var modalImage = document.querySelector(".modal-img");
+    var modalCon = document.querySelector(".modal-container3");
+    var cartBtn = document.querySelector("#cart");
+    var modalClose = document.querySelector(".modal-span");
+    var modal3 = document.querySelector(".modal-3");
+    const input = document.getElementById("input");
+    var secondBtn = document.querySelector(".second-btn");
+    let counter = 0;
+    var coffeeName = "";
+    var imgCoffee = "";
+
+    //Order Modal
+    if (button) {
+      button.forEach((element) => {
+        element.addEventListener("click", function () {
+          modal.style.visibility = "visible";
+        });
+      });
+    }
+    if (btnClose) {
+      btnClose.addEventListener("click", function () {
+        modal.style.visibility = "hidden";
+      });
+    }
+    // Cart Modal
+    if (cartBtn) {
+      cartBtn.addEventListener("click", function () {
+        modalCon.style.visibility = "visible";
+      });
+    }
+    if (modalClose) {
+      modalClose.addEventListener("click", function () {
+        modalCon.style.visibility = "hidden";
+      });
+    }
+    // second button
+    if (secondBtn) {
+      secondBtn.addEventListener("click", function () {
+        if (input.value == 0) {
+          alert("Please enter quantity");
+          return;
+        }
+        var article = document.createElement("article");
+        var div = document.createElement("div");
+        div.className = "project-detail";
+        var divImg = document.createElement("div");
+        divImg.className = "project-img";
+        var image = document.createElement("img");
+        image.src = imgCoffee;
+        divImg.appendChild(image);
+        div.appendChild(divImg);
+
+        var desc = document.createElement("div");
+        desc.className = "project-description";
+        var h3 = document.createElement("h3");
+        h3.textContent = coffeeName;
+        var p = document.createElement("p");
+        p.textContent = "Quantity : " + input.value;
+        desc.appendChild(h3);
+        desc.appendChild(p);
+        div.appendChild(desc);
+
+        var deleteBtn = document.createElement("div");
+        deleteBtn.className = "delete";
+        var i = document.createElement("i");
+        i.className = "fa-solid fa-trash fa-lg";
+        i.style.color = "#ed0c0c";
+        deleteBtn.appendChild(i);
+        div.appendChild(deleteBtn);
+
+        deleteBtn.addEventListener("click", function () {
+          article.style.display = "none";
+        });
+        article.appendChild(div);
+        modal3.appendChild(article);
+        modal.style.visibility = "hidden";
+      });
+    }
+
+    function openModal(linkUrl, namaCoffee) {
+      // alert(linkUrl);
+      modalImage.setAttribute("src", linkUrl);
+      imgCoffee = linkUrl;
+      counter = 0;
+      input.value = 0;
+      coffeeName = namaCoffee;
+    }
+
+    // increment and decrement
+
+    function increment() {
+      counter++;
+    }
+
+    function decrement() {
+      counter--;
+    }
+
+    function get() {
+      return counter;
+    }
+
+    const inc = document.getElementById("increment");
+
+    const dec = document.getElementById("decrement");
+
+    inc.addEventListener("click", () => {
+      increment();
+      input.value = get();
+    });
+
+    dec.addEventListener("click", () => {
+      if (input.value > 0) {
+        decrement();
+      }
+      input.value = get();
+    });
+    AOS.init();
+  </script>
+</html>
