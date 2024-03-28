@@ -6,7 +6,7 @@ if (btnSubmit) {
     modal.classList.add("show");
 
     const next = documenr.querySelector(".next");
-    next.setAttribute("value", "https://aryasatya-blog.netlify.app/");
+    next.setAttribute("value", "https://minegaharacoffee.netlify.app/");
   });
 }
 AOS.init();
